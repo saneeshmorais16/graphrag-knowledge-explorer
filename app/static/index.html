@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GraphRAG Knowledge Explorer</title><link rel="stylesheet" href="/static/styles.css"></head>
+<body><div class="orb o1"></div><div class="orb o2"></div>
+<header><div><span class="eyebrow">LOCAL-FIRST KNOWLEDGE INTELLIGENCE</span><h1>GraphRAG <em>Knowledge Explorer</em></h1>
+<p>Trace answers across documents, entities, and relationships—with every claim anchored to evidence.</p></div>
+<div class="status"><i></i> Local extractive mode</div></header><main>
+<section class="metrics" id="metrics"></section><section class="workbench">
+<div class="ask card"><div class="card-head"><span>01</span><h2>Explore the graph</h2></div>
+<label for="question">Ask a relationship-aware question</label>
+<textarea id="question">Which controls reduce Prompt Injection Risk for the RAG Support Assistant?</textarea>
+<div class="actions"><button id="ask">Run GraphRAG query →</button><button class="ghost" id="ingest">Rebuild index</button></div>
+<div id="answer" class="answer empty">Your grounded answer will appear here.</div></div>
+<aside class="card evidence"><div class="card-head"><span>02</span><h2>Graph evidence</h2></div><div id="graph" class="empty">Relationships used in retrieval.</div></aside>
+</section><section class="grid"><div class="card"><div class="card-head"><span>03</span><h2>Retrieved chunks</h2></div><div id="chunks" class="stack empty">Cited evidence appears here.</div></div>
+<div class="card"><div class="card-head"><span>04</span><h2>Entity map</h2></div><div id="entities" class="chips"></div></div></section>
+<section class="grid"><div class="card"><div class="card-head"><span>05</span><h2>Relationship registry</h2></div><div id="relationships" class="stack"></div></div>
+<div class="card"><div class="card-head"><span>06</span><h2>Evaluation scorecard</h2></div><button class="ghost" id="evaluate">Run evaluation</button><div id="scores" class="scores"></div></div></section>
+</main><footer>Safe synthetic documents · No paid API required · SQLite + NetworkX + FastAPI</footer>
+<script src="/static/app.js"></script></body></html>

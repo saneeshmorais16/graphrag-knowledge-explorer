@@ -1,0 +1,14 @@
+[
+  {
+    "question": "Which controls reduce Prompt Injection Risk for the RAG Support Assistant?",
+    "expected_entities": ["Prompt Injection Risk", "Citation Requirement", "Human Review Required", "Restricted Tool Access", "RAG Support Assistant"]
+  },
+  {
+    "question": "Which tools does the RAG Support Assistant use?",
+    "expected_entities": ["RAG Support Assistant", "FastAPI Inference API", "TF-IDF", "NetworkX"]
+  },
+  {
+    "question": "What is the office menu?",
+    "expected_entities": []
+  }
+]
